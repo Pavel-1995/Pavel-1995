@@ -29,6 +29,6 @@ jobs:
         uses  : actions/checkout@v1
         
       - name : list all my github
-        run  : ls-la
+        run  : ls -la
       
   
