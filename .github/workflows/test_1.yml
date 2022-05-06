@@ -31,7 +31,7 @@ jobs:
             list_local_steps : 'list-local_for_steps'   
             
       - name : Print list-local_for_steps
-        run  : echo '${{ env.list_local_steps }}'
+        run  : echo 'l = ${{ env.list_local_steps }}'
             
         
       - name : Git clone
