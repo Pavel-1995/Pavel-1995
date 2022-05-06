@@ -24,4 +24,11 @@ jobs:
     steps:
       - name: Script_2
         run : echo My name, Git
+        
+      - name : Git clone
+       uses  : actions/checkout@v1
+        
+      -name : list all my github
+       run  : ls-la
+      
   
