@@ -36,6 +36,5 @@ jobs:
              aws --version  
              zip
         
-#       - name : Packages check zip
-#         run  : zip
-  
+
+
