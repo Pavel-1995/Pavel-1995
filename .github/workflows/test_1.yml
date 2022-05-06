@@ -14,7 +14,7 @@ jobs:
       - name: Script_1
         run : |
             echo Hello, world!
-            echo '${{ env.List}}'
+            echo '${{ env.List }}'
 
 
   task_2:
@@ -26,12 +26,12 @@ jobs:
     
     steps:
       - name: Print list_local_for_task_2
-        run : echo '${{ evn.list_local }}'
-#         env :
-#             list_local_steps : 'list-local_for_steps'   
+        run : echo '${{ env.list_local }}'
+        env :
+            list_local_steps : 'list-local_for_steps'   
             
-#       - name : Print list-local_for_steps
-#         run  : echo '${{ evn.list_local_steps }}'
+      - name : Print list-local_for_steps
+        run  : echo '${{ env.list_local_steps }}'
             
         
       - name : Git clone
