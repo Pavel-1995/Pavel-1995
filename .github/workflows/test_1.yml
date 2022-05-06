@@ -23,5 +23,5 @@ jobs:
     
     steps:
       - name: Script_2
-        run : echo My name, Git, My ssh ${{ env.}}
+        run : echo "My name, Git, My ssh ${{ env.}}"
   
