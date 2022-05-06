@@ -26,9 +26,9 @@ jobs:
         run : echo My name, Git
         
       - name : Git clone
-       uses  : actions/checkout@v1
+        uses  : actions/checkout@v1
         
-      -name : list all my github
-       run  : ls-la
+      - name : list all my github
+        run  : ls-la
       
   
