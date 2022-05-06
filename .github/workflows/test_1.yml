@@ -34,7 +34,7 @@ jobs:
       - name : Packages cheсk 
         run  : |
              aws --version  
-             zip
+             zip --version
         
 
 
