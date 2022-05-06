@@ -25,13 +25,12 @@ jobs:
     
     
     steps:
-      - name: Print list_local_for_task_2
-        run : echo '${{ env.list_local }}'
+      - name: Print list_local_for_task_2_and_steeps
+        run : |
+               echo '${{ env.list_local }}'
+               echo 'l = ${{ env.list_local_steps }}'
         env :
             list_local_steps : 'list-local_for_steps'   
-            
-      - name : Print list-local_for_steps
-        run  : echo 'l = ${{ env.list_local_steps }}'
             
         
       - name : Git clone
