@@ -1,6 +1,6 @@
 name: Test_number_1
 env:
-  List_global: 'My test ssha -${{ github.sha}}'
+  List_global: 'My test ssha -${{ github.sha }}'
 on:
   push:
     branches: 
@@ -27,11 +27,11 @@ jobs:
     steps:
       - name: Print list_local_for_task_2
         run : echo '${{ evn.list_local }}'
-        env :
-            list_local_steps : 'list-local_for_steps'   
+#         env :
+#             list_local_steps : 'list-local_for_steps'   
             
-      - name : Print list-local_for_steps
-        run  : echo '${{ evn.list_local_steps }}'
+#       - name : Print list-local_for_steps
+#         run  : echo '${{ evn.list_local_steps }}'
             
         
       - name : Git clone
