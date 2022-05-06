@@ -1,4 +1,6 @@
 name: Test_number_1
+env:
+  List: 'My test list -${{ github.sha}}'
 on:
   push:
     branches: 
@@ -10,11 +12,14 @@ jobs:
     
     steps:
       - name: Script_1
-        run : echo Hello, world!
+        run : |
+            echo Hello, world!
+            echo '${{ env.List}}'
 
 
   task_2:
     runs-on: ubuntu-latest
+    needs: [task_1]
     
     steps:
       - name: Script_2
