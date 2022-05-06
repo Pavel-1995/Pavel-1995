@@ -1,21 +1,22 @@
-
 name: Test_number_1
 on:
   push:
     branches: 
-      -main
+      - main
       
 jobs:
   task_1:
     runs-on: ubuntu-latest
+    
     steps:
       - name: Script_1
-        run: echo Hello, world!
+        run : echo Hello, world!
 
 
   task_2:
     runs-on: ubuntu-latest
+    
     steps:
       - name: Script_2
-        run: echo My name, Git
+        run : echo My name, Git
   
