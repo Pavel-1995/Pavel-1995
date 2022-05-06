@@ -1,6 +1,6 @@
 name: Test_number_1
 env:
-  List: 'My test list -${{ github.sha}}'
+  List: 'My test ssha -${{ github.sha}}'
 on:
   push:
     branches: 
