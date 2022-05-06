@@ -25,13 +25,18 @@ jobs:
     
     
     steps:
-      - name: Script_2
-        run : echo My name, Git
+      - name: Print list_local_for_task_2
+        run : echo '${{ evn.list_local }}'
         env :
             list_local_steps : 'list-local_for_steps'   
+            
+      - name : Print list-local_for_steps
+        run  : echo '${{ evn.list_local_steps }}'
+            
         
       - name : Git clone
-        uses  : actions/checkout@v1
+        uses : actions/checkout@v1
+       
         
       - name : list all my github
         run  : ls -la
