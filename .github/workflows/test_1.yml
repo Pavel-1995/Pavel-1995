@@ -30,5 +30,7 @@ jobs:
         
       - name : list all my github
         run  : ls -la
-      
+     
+      - name : Packages cheak 
+        run  : aws --version  
   
